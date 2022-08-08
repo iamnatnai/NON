@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Input type</title>
+    </head>
+    <body>
+        <form>
+        <p><label>1.ชื่อเต็ม/ย่อของสาขาวิชา</label></p>
+            <select name="dept">
+                <option value="">--Please choose an option--</option>
+                <option value="CS">วิทยาการคอมพิวเตอร์(CS)</option>
+                <option value="MC">คณิตศาสตร์เชิงวิทยาการคอมพิวเตอร์(MC)</option>
+                <option value="BME">วิศวกรรมชีวการแพทย์(BME)</option> 
+            </select>
+            <p>อื่นๆ : <input type="text"></p>
+            <hr>
+        <p><label>2.จำนวนเงินที่จะโอน</label></p>
+            <input type="number" min="1">
+            <hr>
+        <p><label>3.อาหารที่ชื่นชอบ 5 ชนิดที่ชื่นชอบจากมากไปน้อย</label></p>
+            1.<input type="text"> 2.<input type="text"> 3.<input type="text"> 4.<input type="text"> 5.<input type="text">
+            <hr>
+        <p><label>4.ค่าไฟฟ้า 3 เดือนที่ผ่านมา</label></p>
+            <input type="number" min="0">
+            <hr>
+        <p><label>5.รหัสบัตรประชาชน</label></p>
+            <input type="text">
+            <hr>
+        <p><label>6.ความพึงพอใจของหนังสือเล่มนี้</label></p>
+            <input type="radio"name="fav" value="1">1 
+            <input type="radio"name="fav" value="2">2 
+            <input type="radio"name="fav" value="3">3 
+            <input type="radio"name="fav" value="4">4 
+            <input type="radio"name="fav" value="5">5 
+            <hr>
+        <p><label>7.อาการป่วย</label></p>
+            <textarea name="" id="illness" cols="50" rows="10"></textarea>
+            <hr>
+        <p><label>8.ในช่วง 3 เดือนที่ผ่านมา เคยได้รับวัคซีนหรือไม่</label></p>
+            <input type="radio"name="fav" value="1">เคย
+            <input type="radio"name="fav" value="2">ไม่เคย
+            <hr>
+        <p><label>9.รหัสผ่าน</label></p>
+            <input type="password" id="pass" name="password" required>
+            <hr>
+        <p><label>10.เวลาเริ่มเข้าเรียนและสิ้นสุดการเรียน</label></p>
+            เวลาเข้าเรียน : <input type="time" name="start" min="08:00" max="18:00" required><br>
+            เวลาสิ้นสุดการเรียน : <input type="time" name="start" min="10.00" max="21.00" required>
+            <hr>
+        <p><label>11.วันเวลาที่ต้องไปพบแพทย์</label></p>
+            <input type="datetime-local" min="2022-08-08T08:00">
+            <hr>
+        </form>
+        
+    </body>
+</html>

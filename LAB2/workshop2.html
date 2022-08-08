@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<title>Page Title</title>
+</head>
+<body>
+    <form action="form-echo.php" method="get">
+        <input type="text"
+        name="1"
+        placeholder=""
+        pattern="[AEIOUaeiou]{1,3}"
+        title="Not Match1">เป็นสระในภาษาอังกฤษเท่านั้นและมีได้ 3 ตัว
+        <br>
+        <input type="text"
+        name="2"
+        placeholder=""
+        pattern="[A-Z][a-z]+"
+        title="No match2">ขึ้นต้นด้วยตัวพิมพ์ใหญ่ตัวแรก ที่เหลือเป็นอักษรพิมพ์
+        เล็กตั้งแต่ 1 ตัวขึ้นไป
+        <br>
+        <input type="text"
+        name="3"
+        placeholder=""
+        pattern="(ord|order)\d{5}"
+        title="No Match3">ขึ้ันต้นด้วย ord หรือ order ลงท้ายด้วยตัวเลข 5 ตัว
+        <br>
+        <input type="text"
+        name="4"
+        placeholder=""
+        pattern="(fr|[bc]l)og"
+        title="Not Match4">เป็นคําว่า frog หรือ blog หรือ clog เท่านั้น
+
+        </p> <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
